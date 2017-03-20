@@ -5,7 +5,7 @@ const querify = require('utils/query');
 
 // GET /albums/:id
 router.get('/:id', (req, res)=> {
-    const id = req.param('id');
+    const { id } = req.params;
     const query = querify(req.query);
 
     FB.napi(`${id}/albums${query}`, (err, resp)=>{
