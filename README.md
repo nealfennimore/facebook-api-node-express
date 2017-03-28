@@ -24,8 +24,9 @@ Update your `.env` file to look similar.
         "algorithm": "HS256"
     },
     "facebook": {
-        "access_token": "",
-        "page_id": ""
+        "app_id": "",
+        "app_secret": "",
+        "api_version": "2.4",
     }
 }
 ```
